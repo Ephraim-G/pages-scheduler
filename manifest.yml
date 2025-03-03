@@ -1,0 +1,9 @@
+---
+applications:
+- name: scheduler
+  buildpack: python_buildpack
+  no-route: true
+  command: python scheduler.py
+  disk_quota: 128MB
+  instances: 1
+  memory: 64MB
