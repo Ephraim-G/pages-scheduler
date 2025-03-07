@@ -3,7 +3,8 @@ applications:
 - name: scheduler
   buildpack: python_buildpack
   no-route: true
-  command: null
+  command: python scheduler.py
   disk_quota: 1G
   instances: 2
   memory: 256MB
+  health-check-type: process
